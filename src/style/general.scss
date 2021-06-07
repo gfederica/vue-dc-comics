@@ -1,7 +1,11 @@
+
 $whiteText: white;
+$greyText: #949494;
+$darkGreyText: #535D65;
 $blueColor: #0282F9;
 $greyColorFooterBg: #303030;
 $footerBackground: "../assets/img/footer-bg.jpg";
+
 
 .container {
     width: 70%;
@@ -12,4 +16,16 @@ h1,
 h2, 
 h3 {
     color: $whiteText;
+}
+
+h2 {
+    font-size: 14px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
 }

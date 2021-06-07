@@ -6,7 +6,7 @@
       </div>
       <div class="header-right">
         <ul>
-          <li v-for="(link,index) in links" :key="index"> <a href="">{{link.text}}</a> </li>
+          <li v-for="(link,index) in links" :key="index"><a href="">{{link.text}}</a></li>
         </ul>
       </div>
     </div>
@@ -81,17 +81,19 @@ header {
   
 
   .header-left {
+    margin-left: 0;
+    display: flex;
+    align-items: center;
     
     img {
+      margin-left: 0;
       max-width: 60%;
-      padding-top: 5px;
     }
   }
 
 
  ul {
    display: flex;
-   list-style: none;
 
    
    li {
@@ -99,8 +101,10 @@ header {
    }
 
    a {
-     text-decoration: none;
      font-size: 14px;
+     color: $darkGreyText;
+     font-weight: bold;
+     
    }
  }
 
