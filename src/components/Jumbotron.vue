@@ -19,7 +19,7 @@ export default {
 @import "../style/general.scss";
 
 .jumbotron {
-    padding: 50px;
+    padding: 40px 0;
     background-color: black;
 }
 

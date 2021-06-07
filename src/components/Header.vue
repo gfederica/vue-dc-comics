@@ -77,13 +77,14 @@ header {
 
 .container {
   display: flex;
-  padding-top: 10px;
+  height: 10vh;
+  
 
   .header-left {
-    margin-left: 0;
     
     img {
-      width: 50px;
+      max-width: 60%;
+      padding-top: 5px;
     }
   }
 
