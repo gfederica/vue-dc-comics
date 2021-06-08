@@ -6,21 +6,12 @@
     </div>
 </div>
 
-<section class="comics">
-    <div class="container">
-        <ComicsList v-for="(comic, index) in comics" :key="index" :thumb="comic.thumb" :series="comic.series" :type="comic.type"/>
-    </div>
-</section>
 
 </template>
 <script>
-import ComicsList from './components/ComicsList.vue'
 
 export default {
-    name: 'Jumbotron',
-    components: {
-        ComicsList
-    }
+    name: 'Jumbotron'
 }
 </script>
 <style scoped lang="scss">

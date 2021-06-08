@@ -4,6 +4,7 @@
 
     <main>
     <Jumbotron/>
+    <Products/>
     </main>
 
     <Footer/>
@@ -14,7 +15,8 @@
 import Header from './components/Header.vue'
 import Jumbotron from './components/Jumbotron.vue'
 import Footer from './components/Footer.vue'
-import dcComics from './data/dcComics'
+import Products from './components/Products.vue'
+
 
 
 export default {
@@ -22,14 +24,9 @@ export default {
   components: {
     Header,
     Jumbotron,
-    ComicsList,
+    Products,
     Footer
-  },
-    data: function() {
-        return {
-            comics: dcComics
-        }
-    }
+  }
 }
 </script>
 
