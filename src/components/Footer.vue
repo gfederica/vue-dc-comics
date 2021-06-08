@@ -15,14 +15,16 @@
         </div>
     </div>
     <div class="sign-up-bar">
-        <div class="button">
-            <h2>Sign up now!</h2>
-        </div>
-        <div class="follow">
-            <h2>Follow us</h2>
-            <ul>
-                <li v-for="(link, index) in footerLink" :key="index"><a href=""><img src="" alt=""></a></li>
-            </ul>
+        <div class="container">
+            <div class="button">
+                <h2>Sign up now!</h2>
+            </div>
+            <div class="follow">
+                <h2>Follow us</h2>
+                <ul>
+                    <li v-for="(footerLink, index) in footerLinks" :key="index"><a href=""><img :src="footerLink.img" alt=""></a></li>
+                </ul>
+            </div>
         </div>
     </div>
 </footer>
@@ -54,26 +56,26 @@ export default {
           subtitle: ["DC", "MAD Magazine", "DC Kids", "DC Universe","DC Power Visa"]
         }
       ],
-      footerLink: [
+      footerLinks: [
           {
               name: "facebook",
-              img: "../assets/img/footer-facebook.png"
+              img: require("../assets/img/footer-facebook.png")
           },
           {
               name: "twitter",
-              img: "../assets/img/footer-twitter.png"
+              img: require("../assets/img/footer-twitter.png")
           },
           {
               name: "youtube",
-              img: "../assets/img/footer-youtube.png"
+              img: require("../assets/img/footer-youtube.png")
           },
           {
               name: "pinterest",
-              img: "../assets/img/footer-pinterest.png"
+              img: require("../assets/img/footer-pinterest.png")
           },
           {
               name: "periscope",
-              img: "../assets/img/footer-periscope.png"
+              img: require("../assets/img/footer-periscope.png")
           }
       ]
     }
@@ -83,6 +85,7 @@ export default {
 <style scoped lang="scss">
 
 @import "../style/general.scss";
+@import "../style/mixins.scss";
 
 .pre-footer {
     height: 150px;
@@ -104,9 +107,7 @@ a {
     // position: relative;
     // z-index: -2;
     .navigate-list {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
+        @include flex-column-wrap;
         align-content: flex-start;
         justify-content: flex-start;
         padding-top: 20px;
@@ -138,6 +139,42 @@ a {
 .sign-up-bar {
     height: 10vh;
     background-color: $greyColorFooterBg;
+
+    .button {
+        margin-left: 0;
+        border: 2px solid $blueColor;
+        padding: 12px;
+    }
+
+    .follow {
+        margin-right: 0;
+    }
+
+    & > .container {
+        @include flex;
+        height: 100%;
+
+        & .follow,
+        & ul {
+            @include flex;
+            padding: 0 20px;
+
+            & h2 {
+                color: $blueColor;
+                font-size: 18px;
+            }
+
+            & li {
+                padding: 0 6px;
+
+                & img {
+                    width: 30px;
+                }
+            }
+        }
+
+
+    }
 }
 
 </style>

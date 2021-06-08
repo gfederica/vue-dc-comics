@@ -69,6 +69,7 @@ export default {
 <style scoped lang="scss">
 
 @import "../style/general.scss";
+@import "../style/mixins.scss";
 
 header {
   text-transform: uppercase;
@@ -76,15 +77,13 @@ header {
 
 
 .container {
-  display: flex;
-  align-items: center;
+  @include flex;
   height: 10vh;
   
 
   .header-left {
     margin-left: 0;
-    display: flex;
-    align-items: center;
+    @include flex;
     width: 60%;
     
     img {
