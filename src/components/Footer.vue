@@ -1,7 +1,6 @@
 <template>
 
 <footer>
-    <div class="pre-footer"></div>
     <div class="navigate">
         <div class="container">
             <div class="navigate-list">
@@ -87,14 +86,6 @@ export default {
 @import "../style/general.scss";
 @import "../style/mixins.scss";
 
-.pre-footer {
-    height: 150px;
-    background-color: $blueColor;
-}
-
-h2 {
-    text-transform: uppercase;
-}
 
 a {
     color: $greyText;

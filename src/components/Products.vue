@@ -55,8 +55,7 @@ export default {
     .products {
         background-color: $greyColorProductsBg;
         position: relative;
-
-        & h2,
+        
         & h3 {
             text-transform: uppercase;
         }

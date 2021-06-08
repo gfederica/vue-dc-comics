@@ -5,6 +5,7 @@
     <main>
     <Jumbotron/>
     <Products/>
+    <Buy/>
     </main>
 
     <Footer/>
@@ -16,6 +17,7 @@ import Header from './components/Header.vue'
 import Jumbotron from './components/Jumbotron.vue'
 import Footer from './components/Footer.vue'
 import Products from './components/Products.vue'
+import Buy from './components/Buy.vue'
 
 
 
@@ -25,6 +27,7 @@ export default {
     Header,
     Jumbotron,
     Products,
+    Buy,
     Footer
   }
 }

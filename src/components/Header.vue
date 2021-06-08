@@ -6,7 +6,7 @@
       </div>
       <div class="header-right">
         <ul>
-          <li v-for="(link,index) in links" :key="index"><a href="">{{link.text}}</a></li>
+          <li v-for="(link,index) in links" :key="index"><a href="" :class="{active: link.active}">{{link.text}}</a></li>
         </ul>
       </div>
     </div>
@@ -25,7 +25,7 @@ export default {
         },
         {
           text: "comics",
-          active: false
+          active: true
         },
         {
           text: "movies",
@@ -71,10 +71,6 @@ export default {
 @import "../style/general.scss";
 @import "../style/mixins.scss";
 
-header {
-  text-transform: uppercase;
-}
-
 
 .container {
   @include flex;
@@ -102,9 +98,14 @@ header {
    }
 
    a {
+     text-transform: uppercase;
      font-size: 12px;
      color: $darkGreyText;
      font-weight: bold;
+
+     & .active {
+       color: $blueColor;
+     }
      
    }
  }
