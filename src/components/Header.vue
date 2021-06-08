@@ -77,6 +77,7 @@ header {
 
 .container {
   display: flex;
+  align-items: center;
   height: 10vh;
   
 
@@ -84,10 +85,11 @@ header {
     margin-left: 0;
     display: flex;
     align-items: center;
+    width: 60%;
     
     img {
       margin-left: 0;
-      max-width: 60%;
+      width: 54px;
     }
   }
 
@@ -97,11 +99,11 @@ header {
 
    
    li {
-     padding: 8px;
+     padding: 0 14px;
    }
 
    a {
-     font-size: 14px;
+     font-size: 12px;
      color: $darkGreyText;
      font-weight: bold;
      

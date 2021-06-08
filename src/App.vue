@@ -1,6 +1,5 @@
 <template>
-  <div id="app">
-    <body>    
+  <div id="app">   
     <Header/>
 
     <main>
@@ -8,7 +7,6 @@
     </main>
 
     <Footer/>
-    </body>
   </div>
 </template>
 
@@ -34,7 +32,6 @@ $titleFont: 'PT Sans';
 
 body {
     font-family: $titleFont, sans-serif;
-    
 }
 
 

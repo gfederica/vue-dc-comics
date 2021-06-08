@@ -8,13 +8,23 @@
                 <div v-for="(link, index) in links" :key="index">
                     <h2>{{link.title}}</h2>
                     <ul >
-                        <li v-for="(link, index) in links[index].subtitle" :key="index"><a href="">{{link}}</a></li>
+                        <li v-for="subtitle in link.subtitle" :key="subtitle"><a href="">{{subtitle}}</a></li>
                     </ul>                
                 </div>
             </div>
         </div>
     </div>
-    <div class="sign-up-bar"></div>
+    <div class="sign-up-bar">
+        <div class="button">
+            <h2>Sign up now!</h2>
+        </div>
+        <div class="follow">
+            <h2>Follow us</h2>
+            <ul>
+                <li v-for="(link, index) in footerLink" :key="index"><a href=""><img src="" alt=""></a></li>
+            </ul>
+        </div>
+    </div>
 </footer>
 
 
@@ -43,6 +53,28 @@ export default {
           title: "sites",
           subtitle: ["DC", "MAD Magazine", "DC Kids", "DC Universe","DC Power Visa"]
         }
+      ],
+      footerLink: [
+          {
+              name: "facebook",
+              img: "../assets/img/footer-facebook.png"
+          },
+          {
+              name: "twitter",
+              img: "../assets/img/footer-twitter.png"
+          },
+          {
+              name: "youtube",
+              img: "../assets/img/footer-youtube.png"
+          },
+          {
+              name: "pinterest",
+              img: "../assets/img/footer-pinterest.png"
+          },
+          {
+              name: "periscope",
+              img: "../assets/img/footer-periscope.png"
+          }
       ]
     }
   }
