@@ -1,9 +1,6 @@
 <template>
 
 <div class="jumbotron">
-    <div class="container">
-        <h1>Content goes here</h1>
-    </div>
 </div>
 
 
@@ -19,12 +16,10 @@ export default {
 @import "../style/general.scss";
 
 .jumbotron {
-    padding: 40px 0;
-    background-color: black;
-}
-
-.comics {
-    background-color: $greyColorProductsBg;
+    height: 280px;
+    background-image: url(../assets/img/jumbotron.jpg);
+    background-size: 100%;
+    background-position: top;
 }
 
 </style>

@@ -20,13 +20,18 @@ export default {
 
 .product {
     width: calc(100% / 6);
-    padding: 20px;
+    padding: 10px;
     & img {
-        width: 100px;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        object-position: top;
     }
+
     & h3 {
         text-transform: uppercase;
         font-size: 12px;
+        padding-bottom: 10px;
     }
 }
 </style>

@@ -141,9 +141,8 @@ a {
     background-color: $greyColorFooterBg;
 
     .button {
+        @include button;
         margin-left: 0;
-        border: 2px solid $blueColor;
-        padding: 12px;
     }
 
     .follow {
